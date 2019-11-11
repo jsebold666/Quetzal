@@ -1,14 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/common/header/index.jsx';
+import Landing from './windows/home-page/index.jsx'
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
+      <Landing></Landing>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hola Mundo
         </p>
         <a
           className="App-link"

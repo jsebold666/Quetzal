@@ -1,8 +1,21 @@
+@font-face{
+  font-family: 'Roboto Condensed';
+  src: url('./fonts/RobotoCondensed-Regular.ttf');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'Roboto Condensed';
+  src: url('./fonts/RobotoCondensed-Light.ttf');
+  font-weight: 200;
+}
+@font-face{
+  font-family: 'Roboto Condensed';
+  src: url('./fonts/RobotoCondensed-Bold.ttf');
+  font-weight: 600;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Roboto Condensed';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background: #0000;
+    position: fixed;
+    z-index: 1;
+}
+img{
+    height: 6vh;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    float: left;
+}
+ul{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    color: #fff;
+    list-style: none;
+}
+li{
+    margin-top: 3vh;
+    justify-content: center;
+    margin-right: 5vw;
+    font-size: 1.2em;
+}
