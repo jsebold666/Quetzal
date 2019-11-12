@@ -211,3 +211,118 @@
         }
     }
 }
+.des{
+    width: 100%;
+    height: 100vh;
+    background: #180D41;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #fff;
+    .team{
+        width: 100%;
+        height: 65vh;
+        background-image: url('../../img/business\ concept.jpg');
+        background-size: cover;
+        position: relative;
+        .verl{
+            background: rgba($color: #000000, $alpha: 0.7);
+            width: 100%;
+            height: 65vh;
+            position: absolute;
+        }
+        h2{
+            font-size: 2em;
+            margin-top: 15vh;
+            color: #fff;
+        }
+        img{
+            width: 8vw;
+            height: 8vw;
+            margin-left: 45%;
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 35vh;
+        background: #0000;
+        display: flex;
+        .contact{
+            width: 30%;
+            height: 35vh;
+            padding: 20px;
+            img{
+                width: 5vw;
+                height: 5vw;
+            }
+            p{
+                margin-top: 20vh;
+                font-size: 1.2em;
+            }
+        }
+        .asistnt{
+            margin-left: 3vw;
+            width: 20%;
+            height: 35vh;
+            text-align: left;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                height: 70%;
+                width: 2px;
+                background: #fff;
+                right: 0;
+                top: 12%;
+            }
+            h2{
+                font-size: 2em;
+                margin-top: 4vh;
+                margin-bottom: 4vh;
+            }
+            p{
+                font-size: 1.2em;
+                padding-top: 1vh;
+            }
+        }
+        .app{
+            margin-left: 3vw;
+            text-align: left;
+            width: 20vw;
+            height: 35vh;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                height: 70%;
+                width: 2px;
+                background: #fff;
+                right: 0;
+                top: 12%;
+            }
+            h2{
+                margin-top: 4vh;
+                font-size: 2em;
+                margin-bottom: 4vh;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        .u-cont{
+            margin-left: 3vw;
+            width: 10%;
+            height: 35vh;
+            text-align: left;
+            h2{
+                margin-top: 4vh;
+                font-size: 2em;
+                margin-bottom: 4vh;
+            }
+            p{
+                font-size: 1.2em;
+                padding-top: 1vh;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+
+.switch{
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0.5px solid $gray;
+    transition: 0.2s;
+    position: relative;
+    &.disable {
+        background: $white;
+    }
+    &.active {
+        background: $blue;
+    }
+    .indicate{
+        width: 31px;
+        height: 31px;
+        transition: 0.2s;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        &.disable {
+            background: $blue;
+            left: 2px;
+        }
+        &.active {
+            background: $white;
+            left: 37px;
+        }
+    }
+}

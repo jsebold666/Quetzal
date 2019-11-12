@@ -2,7 +2,12 @@ import React from 'react';
 import './index.scss';
 import student from '../../img/prg04.png';
 import pro from '../../img/prg00.png';
-import team from '../../img/workteam.png'
+import team from '../../img/workteam.png';
+import t1 from '../../icons/team.svg';
+import facebook from '../../icons/facebook.svg';
+import instagram from '../../icons/instagram.svg';
+import twitter from '../../icons/twitter.svg';
+import mail from '../../icons/mail.svg'
 
 export default ( props ) => (
     <div>
@@ -55,7 +60,36 @@ export default ( props ) => (
             </div>
         </div>
         <div className='des'>
+            <div className='team'>
+                <div className='verl'>
             <h2>Descubre Nuestro equipo de trabajo</h2>
+            <img src={t1}/>
+            </div>
+            </div>
+            <div className='footer'>
+                <div className='contact'>
+                    <img src={facebook}/>
+                    <img src={twitter} />
+                    <img src={instagram} />
+                    <img src={mail} />
+                    <p>justthinkcompany@gmail.com</p>
+                </div>
+                <div className='asistnt'>
+                    <h2>Asistencia</h2>
+                    <p>Centro de ayuda</p>
+                    <p>Condiciones de uso</p>
+                    <p>Políticas de Privacidad</p>
+                </div>
+                <div className='app'>
+                    <h2>Aplicación</h2>
+                    <p>Información del Desarrollo</p>
+                </div>
+                <div className='u-cont'>
+                    <h2>U-Cont</h2>
+                    <p>Información</p>
+                    <p>Descarga</p>
+                </div>
+            </div>
         </div>
     </div>
 )
