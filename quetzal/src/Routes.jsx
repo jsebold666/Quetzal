@@ -1,0 +1,6 @@
+export const HOME = '/'
+export const FORGOTPASSWORD = '/recuperar-contraseña'
+export const LOGIN = '/entrar'
+export const REGISTER = '/registrarse'
+export const COURSES = '/cursos'
+export const CONTENTS = '/cursos/contenidos'
