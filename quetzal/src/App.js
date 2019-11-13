@@ -17,9 +17,7 @@ export default class App extends Component {
   render( ) {
     return(
       <div className = 'App'>
-        <Header></Header>
-        {//<Landing></Landing>
-        }
+        <Header />
         <Switch>
           <Route exact path = { ROUTES.HOME } component = { Landing }/>
         </Switch>
