@@ -1,5 +1,11 @@
 import React from 'react';
 import './index.scss';
+
+import { NavLink } from 'react-router-dom'
+import * as ROUTES from '../../Routes'
+
+import Header from '../../components/common/header/index.jsx'
+
 import student from '../../img/prg04.png';
 import pro from '../../img/prg00.png';
 import team from '../../img/workteam.png';
@@ -11,6 +17,7 @@ import mail from '../../icons/mail.svg'
 
 export default ( props ) => (
     <div>
+        <Header />
         <div className='enc'>
            <div className="overlay">
                <h2>
@@ -19,7 +26,7 @@ export default ( props ) => (
                <div className = "p-container">
                     <p>Empieza a aprender aquí y diviértete estudiando de forma rápida y eficaz</p>
                </div>
-               <button>Registrarse</button>
+               <button><NavLink to = { ROUTES.REGISTER } className = 'links'>Registrarse</NavLink></button>
            </div>
         </div>
         <div className='enc1'>
