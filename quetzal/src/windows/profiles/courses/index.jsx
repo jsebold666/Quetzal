@@ -2,14 +2,17 @@ import React from 'react';
 import './index.scss';
 import Sidebar from '../../../components/common/sidebar/index.jsx';
 
+import * as ROUTES from '../../../Routes'
+import { NavLink } from 'react-router-dom'
+
 export default ( props ) => (
     <div>
         <div className="courses">
         <Sidebar />
             <div className="cards">
-                <div className="subject math">
+                <NavLink to = { ROUTES.VIDEO } className = 'link'><div className="subject math">
                     <span>Matemáticas</span>
-                </div>
+                </div></NavLink>
                 <div className="subject spani">
                     <span>Español</span>
                 </div>

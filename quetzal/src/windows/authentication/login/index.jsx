@@ -8,6 +8,9 @@ import appr from '../../../icons/approved.svg';
 import note from '../../../icons/notebook.svg';
 import Swicth from '../../../components/common/swicth/index.jsx';
 
+import { NavLink } from 'react-router-dom'
+import * as ROUTES from '../../../Routes'
+
 
 export default class Login extends Component {
     constructor( props ){
@@ -46,7 +49,7 @@ export default class Login extends Component {
                         changeSwitch = { this.changeSwitch }/><span>Recordar Usuario</span>
                     </div>
                     <div className='btns'>
-                        <input type='submit' value='Entrar'/>
+                        <NavLink to = { ROUTES.ALUMN }><input type='submit' value='Entrar'/></NavLink>
                         <p>¿No tienes cuenta?</p>
                     </div>
                     </div>

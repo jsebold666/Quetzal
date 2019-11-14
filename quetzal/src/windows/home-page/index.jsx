@@ -53,7 +53,7 @@ export default ( props ) => (
         </div>
         <div className='enc2'>
             <div className='c1'>
-                <h2>Basada en Datos</h2>
+                <h2 style = {{ textAlign: 'center'}}>Basada en Datos</h2>
             </div>
             <div className='c2'>
                 <h2>Privacidad y Seguridad</h2>
@@ -69,7 +69,7 @@ export default ( props ) => (
         <div className='des'>
             <div className='team'>
                 <div className='verl'>
-            <h2>Descubre Nuestro equipo de trabajo</h2>
+            <h2 style = {{ textAlign: 'center' }}>Descubre Nuestro equipo de trabajo</h2>
             <img src={t1}/>
             </div>
             </div>
