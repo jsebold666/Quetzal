@@ -1,0 +1,52 @@
+.courses{
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    .cards{
+        width: 80%;
+        margin-left: 20%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .subject{
+            width: 20vw;
+            height: 20vw;
+            margin: 3%;
+            border-radius: 10px;
+            box-shadow: 7px 9px 3px -1px rgba(0,0,0,0.75);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            transition: all 0.3s;
+            span{
+                text-align: center;
+                border-radius: 5px 5px 0 0;
+                font-size: 1.7em;
+                background: #fff;
+            }
+        }
+        .subject:hover{
+            margin-top: 1%;
+            box-shadow: 7px 24px 3px -1px rgba(0,0,0,0.75);
+        }
+    }
+}
+div.subject.math{
+    background-image: url('../../../img/math\ 00.jpg');
+    background-size: cover;
+}
+div.subject.spani{
+    background-image: url('../../../img/spanish.jpg');
+    background-size: cover;
+}
+div.subject.science{
+    background-image: url('../../../img/science.jpg');
+    background-size: cover;
+}
+div.subject.inf{
+    background-image: url('../../../img/tecnology.jpg');
+    background-size: cover;
+}

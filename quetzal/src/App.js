@@ -1,22 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/common/header/index.jsx';
-import Landing from './windows/home-page/index.jsx';
-import Login from './windows/authentication/login/index.jsx';
-import Register from './windows/authentication/register/index.jsx';
-import Student from './windows/profiles/studente-profile/index.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Landing />
-      <Login />
-      <Register />
-      <Student />
-    </div>
-  );
+import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
+
+import * as ROUTES from './Routes'
+
+import Header from './components/common/header/index.jsx'
+import Landing from './windows/home-page/index.jsx'
+import ForgotPassword from './windows/authentication/forgot-password'
+import Alumn from './windows/profiles/courses/index.jsx';
+import Lesson from './windows/profiles/lesson/index.jsx';
+import Video from './windows/profiles/videoC/index.jsx';
+
+export default class App extends Component {
+  constructor( props ) {
+    super( props )
+    this.state = {
+
+    }
+  }
+
+  render( ) {
+    return(
+      <div className = 'App'>
+        <Header />
+        <Switch>
+          <Route exact path = { ROUTES.HOME } component = { Landing }/>
+          <Route exact path = { ROUTES.FORGOTPASSWORD } component = { ForgotPassword }/>
+        </Switch>
+      </div>
+    )
+  }
 }
-
-export default App;

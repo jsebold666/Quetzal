@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    position: fixed;
     .profile{
         width: 100%;
         img{
@@ -17,11 +18,13 @@
             font-size: 2em;
             color: #fff;
             font-weight: 400;
+            text-align: center;
         }
         h3{
             font-size: 1.8em;
             color: #fff;
             font-weight: 300;
+            text-align: center;
         }
     }
     .options{
